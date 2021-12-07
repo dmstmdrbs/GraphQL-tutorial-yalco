@@ -95,6 +95,10 @@ Query: {
 - **args**로부터 주어진 id에 해당하는 Team만 **필터링**하여 반환
 
 ```js
+/*
+  실제 서버 코드에서는 MySQL 등에서 활용되는 쿼리문이 들어갈 것이지만,
+  강의에서는 더미 데이터를 이용하기 때문에 js를 이용하여 Query를 구현
+*/
   Query: {
     //...
     team: (parent, args, context, info) => database.teams
@@ -134,6 +138,10 @@ query {
 - Team 목록을 반환 시 해당하는 supplies를 supplies 항목에 추가
 
 ```js
+/*
+  실제 서버 코드에서는 MySQL 등에서 활용되는 쿼리문이 들어갈 것이지만,
+  강의에서는 더미 데이터를 이용하기 때문에 js를 이용하여 Query를 구현
+*/
 Query: {
     // ...
     teams: () => database.teams
